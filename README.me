@@ -32,6 +32,12 @@ Verificar que el texto tiene muchas lineas con:
 wc -l textos.txt
 ```
 
+Crear JAR con:
+```
+mvn clean compile assembly:single
+```
+
+
 Para hacer la prueba jugar con los valores de heap maximo y con el flag de string deduplication
 ```
 -Xmx80m -XX:+UseG1GC
